@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>OAuth2: Authorization Server CSRF</title>
+</head>
+<body>
+    <div id="code-display">Loading...</div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var params = new URLSearchParams(window.location.search);
+            var code = params.get('code') || 'No code found';
+            document.getElementById('code-display').textContent = 'Code: ' + code;
+        });
+    </script>
+</body>
+</html>
